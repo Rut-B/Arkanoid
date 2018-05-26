@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+<<<<<<< HEAD
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -42,6 +43,30 @@ public class GameView extends View  {
 
 
     private int status;
+=======
+import android.view.View;
+
+/**
+ * Created by aviabu on 21/05/2018.
+ */
+
+public class GameView extends View  {
+
+
+    private static final float RADIUS =30;
+    private static final float DX_DY_BALL = 2;
+    private static final int BALL_COLOR = Color.BLUE;
+    private static final int PADDLE_COLOR = Color.YELLOW;
+
+
+
+    private static final int PADDLE_WIDTH = 400;
+    private static final int  PADDLE_HEIGHT= 20;
+    private static final int NUM_BRICKS_ROWS =5;
+    private static final int NUM_BRICKS_COLS =7;
+    private static final int BRIKE_COLOR = Color.GREEN;
+
+>>>>>>> 83510fd19ae6984ae8ab280b958b2878c58df2f5
     private Ball ball;
     private Paddle paddle;
     private BrickCollection brickCollection;
@@ -50,6 +75,7 @@ public class GameView extends View  {
     private Paint pen;
     private int screen_width;
     private int screen_height;
+<<<<<<< HEAD
     private int centerBall_x,centerBall_y;
     private int centerPaddle_x,centerPaddle_y;
     private String centerTxt;
@@ -62,11 +88,30 @@ public class GameView extends View  {
         this.lives=3;
         this.centerTxt="";
         this.status=START_STATUS;
+=======
+
+
+    private int centerBall_x,centerBall_y;
+    private int centerPaddle_x,centerPaddle_y;
+
+
+
+
+    public GameView(Context context, @Nullable AttributeSet attrs) {
+        super(context, attrs);
+        this.pen=new Paint();
+        this.centerBall_x= 150;
+        this.centerBall_y=150;
+        this.centerPaddle_x=150;
+        this.centerPaddle_y = 400;
+
+>>>>>>> 83510fd19ae6984ae8ab280b958b2878c58df2f5
     }
 
 
     @Override
     protected void onDraw(Canvas canvas) {
+<<<<<<< HEAD
 
         super.onDraw(canvas);
 
@@ -89,11 +134,26 @@ public class GameView extends View  {
         super.onSizeChanged(w, h, oldw, oldh);
         this.screen_width = w;
         this.screen_height= h;
+=======
+        super.onDraw(canvas);
+        canvas.drawColor(Color.RED);
+        ball.draw(canvas);
+        paddle.draw(canvas);
+        brickCollection.draw(canvas);
+    }
+
+    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+        super.onSizeChanged(w, h, oldw, oldh);
+        this.screen_width = w;
+        this.screen_height= h;
+
+>>>>>>> 83510fd19ae6984ae8ab280b958b2878c58df2f5
         initGame();
     }
 
     private void initGame()
     {
+<<<<<<< HEAD
         this.lives= 3;
         this.scores=0;
         this.numBrick=0;
@@ -240,4 +300,11 @@ public class GameView extends View  {
         getReady();
         this.status=GET_READY_STATUS;
     }
+=======
+        this.ball=new Ball(DX_DY_BALL,DX_DY_BALL,centerBall_x,centerBall_y,RADIUS,BALL_COLOR);
+        this.paddle=new Paddle(centerPaddle_x,centerPaddle_y,PADDLE_WIDTH,PADDLE_HEIGHT,PADDLE_COLOR);
+        this.brickCollection=new BrickCollection(NUM_BRICKS_ROWS,NUM_BRICKS_COLS,BRIKE_COLOR,screen_width,screen_height);
+    }
+
+>>>>>>> 83510fd19ae6984ae8ab280b958b2878c58df2f5
 }

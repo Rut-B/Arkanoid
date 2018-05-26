@@ -8,7 +8,10 @@
     tools:context="com.aviabu.arknoid.MainActivity">
 
     <view
+<<<<<<< HEAD
         android:id="@+id/gameViewID"
+=======
+>>>>>>> 83510fd19ae6984ae8ab280b958b2878c58df2f5
         class="com.aviabu.arknoid.GameView"
         id="@+id/view"
         layout_width="match_parent"

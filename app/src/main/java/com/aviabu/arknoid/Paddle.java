@@ -9,6 +9,7 @@ import android.graphics.Paint;
 
 public class Paddle {
     private int location_x;
+<<<<<<< HEAD
     private int screenWidth;
     private int location_y;
     private int moveStep;
@@ -17,19 +18,29 @@ public class Paddle {
         return location_y;
     }
 
+=======
+    private int location_y;
+>>>>>>> 83510fd19ae6984ae8ab280b958b2878c58df2f5
     private int width;
     private int height;
     private int color;
     private Paint pen;
 
+<<<<<<< HEAD
     public Paddle(int location_x, int location_y, int width, int height, int step,int screenW,int color) {
         this.screenWidth= screenW;
+=======
+    public Paddle(int location_x, int location_y, int width, int height, int color) {
+>>>>>>> 83510fd19ae6984ae8ab280b958b2878c58df2f5
         this.location_x = location_x;
         this.location_y = location_y;
         this.width = width;
         this.height = height;
         this.color = color;
+<<<<<<< HEAD
         this.moveStep=step;
+=======
+>>>>>>> 83510fd19ae6984ae8ab280b958b2878c58df2f5
         pen = new Paint();
 
     }
@@ -39,6 +50,7 @@ public class Paddle {
     }
 
 
+<<<<<<< HEAD
     public void setPosition(int centerPaddle_x, int centerPaddle_y) {
         this.location_x=centerPaddle_x;
         this.location_y=centerPaddle_y;
@@ -77,4 +89,6 @@ public class Paddle {
         return  false;
 
     }
+=======
+>>>>>>> 83510fd19ae6984ae8ab280b958b2878c58df2f5
 }

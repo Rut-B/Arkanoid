@@ -2,8 +2,15 @@ package com.aviabu.arknoid;
 
 import android.graphics.Canvas;
 import android.graphics.Paint;
+<<<<<<< HEAD
 import android.util.Log;
 
+=======
+
+/**
+ * Created by aviabu on 21/05/2018.
+ */
+>>>>>>> 83510fd19ae6984ae8ab280b958b2878c58df2f5
 
 public class Brick {
 
@@ -14,6 +21,7 @@ public class Brick {
     private int color;
     private Paint pen;
 
+<<<<<<< HEAD
     public int getLocation_x() {
         return location_x;
     }
@@ -30,6 +38,8 @@ public class Brick {
         return height;
     }
 
+=======
+>>>>>>> 83510fd19ae6984ae8ab280b958b2878c58df2f5
     public Brick(int location_x, int location_y, int width, int height, int color) {
         this.location_x = location_x;
         this.location_y = location_y;
@@ -46,6 +56,7 @@ public class Brick {
         canvas.drawRect(location_x,location_y,location_x+width,location_y+height,pen);
     }
 
+<<<<<<< HEAD
     public boolean isCollsion(Ball ball)
     {
         float cxBall,cyBall,radiusBall;
@@ -69,5 +80,7 @@ public class Brick {
         return  false;
     }
 
+=======
+>>>>>>> 83510fd19ae6984ae8ab280b958b2878c58df2f5
 
 }

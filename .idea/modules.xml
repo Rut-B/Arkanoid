@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/Arkanoid-master.iml" filepath="$PROJECT_DIR$/Arkanoid-master.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/Arknoid.iml" filepath="$PROJECT_DIR$/Arknoid.iml" />
+>>>>>>> 83510fd19ae6984ae8ab280b958b2878c58df2f5
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
